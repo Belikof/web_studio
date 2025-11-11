@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>Демо Сайт</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="overlay">
-    <div class="center-box">
-        <div class="panel-header">
-          <span class="init-text"><span id="init-word">инициализация</span><span id="init-dots"></span></span>
-          <span class="lamp" id="lamp"></span>
+    <div class="container">
+        <div class="popup-window">
+            <div class="terminal-header">
+                <span class="terminal-label">инициализация...</span>
+            </div>
+            <div class="popup-content">
+                <div class="typing-text" id="typingText"></div><span id="typingCursor" class="typing-cursor">|</span>
+                <button class="hacker-button" id="nextButton">
+                    <span class="button-text">Далее</span>
+                    <span class="button-cursor">_</span>
+                </button>
+            </div>
         </div>
-        <div class="message" id="typing-message">
-          <span id="typing-text"></span>
-        </div>
-        <div class="push-down"></div>
-        <button id="next-btn">Далее</button>
-      </div>
-  </div>
-  <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
